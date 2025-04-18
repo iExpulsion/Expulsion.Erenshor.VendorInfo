@@ -4,10 +4,9 @@ using UnityEngine;
 namespace Expulsion.Erenshor.VendorInfo.Patches
 {
     [HarmonyPatch(typeof(ItemIcon), nameof(ItemIcon.OnPointerEnter))]
-    public class ItemIconPatch
+    public class ItemIcon_OnPointerEnter
     {
-        [HarmonyPostfix]
-        public static void OnPointerEnter(ItemIcon __instance)
+        public static void Postfix(ItemIcon __instance)
         {
             GameData.Misc.IDTitle.text = __instance.VendorSlot
                 ? $"{__instance.MyItem.ItemName}\n{__instance.MyItem.ItemValue} Gold"

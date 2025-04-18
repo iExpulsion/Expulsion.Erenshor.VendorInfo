@@ -10,12 +10,19 @@ namespace Expulsion.Erenshor.VendorInfo
         private const string PluginName = "VendorInfo";
         private const string PluginVersion = "1.0.0";
 
+        private Harmony _harmonyInstance;
+        
         private void Awake()
         {
-            var harmonyInstance = new Harmony(PluginGuid);
-            harmonyInstance.PatchAll();
+            _harmonyInstance = new Harmony(PluginGuid);
+            _harmonyInstance.PatchAll();
 
             Logger.LogInfo($"Plugin {PluginName} is loaded!");
+        }
+
+        private void OnDestroy()
+        {
+            _harmonyInstance.UnpatchSelf();
         }
     }
 }
