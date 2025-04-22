@@ -8,7 +8,7 @@ namespace Expulsion.Erenshor.VendorInfo
     {
         private const string PluginGuid = "Expulsion.Erenshor.VendorInfo";
         private const string PluginName = "VendorInfo";
-        private const string PluginVersion = "1.0.0";
+        private const string PluginVersion = "1.0.2";
 
         private Harmony _harmonyInstance;
         
