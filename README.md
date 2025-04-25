@@ -7,7 +7,7 @@ Displays item prices when hovering over an item.
 
 ## Installation
 - Requires [BepInEx](https://github.com/BepInEx/BepInEx)
-- Download `VendorInfo.dll` [Latest Release](https://github.com/iExpulsion/Expulsion.Erenshor.VendorInfo/releases/latest)
+- Download `Expulsion.Erenshor.VendorInfo.dll` [Latest Release](https://github.com/iExpulsion/Expulsion.Erenshor.VendorInfo/releases/latest)
 - Place the DLL inside your `BepInEx/Plugins` Directory
 
 ## Screenshots
@@ -17,4 +17,3 @@ Displays item prices when hovering over an item.
 *Helpful info for determining potential conflicts with other plugins.*
 ### Postfix Patch
 - `ItemIcon.OnPointerEnter()`
-- `ItemInfoWindow.DisplayItem()`
